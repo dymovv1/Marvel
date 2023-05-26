@@ -1,22 +1,14 @@
-import Header from "../Header/header.jsx";
-import Container from "../General/container.scss"
-import GeneralSetting from "../General/generalSettings.scss"
-import Fonts from "../General/fonts.scss"
-import Intro from "../Intro/index.jsx"
-import Slider from "../EventsSection";
-import EventsSection from "../EventsSection";
 import AppRoutes from "../../Routes/index.jsx";
-import { Outlet } from "react-router-dom";
+import GeneralSettings from '../General/generalSettings.scss'
+import container from '../General/container.scss'
+import fonts from '../General/fonts.scss'
+import toRem from '../General/toRem.scss'
+
 
 function App() {
     return (
         <>
-            <Header />
-            <Intro />
-            <EventsSection />
-            <AppRoutes>
-                <Outlet />
-            </AppRoutes>
+           <AppRoutes/>
         </>
     )
 }

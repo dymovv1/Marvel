@@ -5,11 +5,17 @@
 
 
 .header {
-  background: #1f3561;
+  background: #0d0202;
   box-shadow: 0 2px 5px -1px black;
   position: sticky;
   top: 0;
   z-index: 10;
+
+  &-logo__block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 
   &-body {
     display: flex;
@@ -20,6 +26,7 @@
   &-navigation {
     display: flex;
     gap: 30px;
+    align-items: center;
   }
 
   &-logo {
@@ -30,11 +37,10 @@
 .navigation {
 
   &-item {
-    font-size: toRem(18);
-    font-weight: 500;
     transition: all 0.25s;
     cursor: pointer;
     padding: 30px 10px 30px 10px;
+
   }
   &-item:hover {
     background: #ED1D24;
@@ -43,4 +49,82 @@
 
 }
 
+.navLink {
+  font-size: toRem(18);
+  font-weight: 500;
+  color: #e8e7e3;
+  padding: 30px 10px 30px 10px;
 
+}
+
+.burger {
+
+  &-menu {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: #e62429;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    gap: 7px;
+    transition: all 0.25s;
+
+  }
+  &-line {
+    display: inline-block;
+    width: 30px;
+    background: #e8e7e3;
+    height: 1.5px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .header-nav {
+      display: none;
+    }
+    &-logo {
+      max-width: 100px;
+      min-height: 50px;
+    }
+    .header-nav.header-nav-visible {
+      display: block;
+
+    }
+    .header-wrapper {
+      display: block;
+
+    }
+    .header-body.isHeaderActive {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .header-navigation {
+      display: flex;
+      gap: 0;
+      align-items: center;
+      flex-direction: column;
+
+    }
+    .header-logo__block.isLogoActive {
+      display: none;
+
+    }
+  }
+}
+
+@media screen  and (min-width: 769px) {
+  .burger-menu {
+    display: none;
+  }
+
+}

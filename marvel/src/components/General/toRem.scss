@@ -1,4 +1,4 @@
 @function toRem($value) {
-  $rem-value: $value / 16; // Assuming the base font size is 16px
+  $rem-value: $value / 16;
   @return $rem-value * 1rem;
 }

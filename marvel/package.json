@@ -10,13 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bulma": "^0.9.4",
     "cors": "^2.8.5",
     "crypto-js": "^4.1.1",
     "express": "^4.18.2",
     "http-proxy-middleware": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.4.4",
     "react-router-dom": "^6.11.2",
+    "slick-carousel": "^1.8.1",
     "swiper": "^9.3.2"
   },
   "devDependencies": {
