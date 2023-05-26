@@ -14,9 +14,9 @@ function App() {
             <Header />
             <Intro />
             <EventsSection />
-            <AppRoutes>
-                <Outlet />
-            </AppRoutes>
+            {/*<AppRoutes>*/}
+            {/*    <Outlet />*/}
+            {/*</AppRoutes>*/}
         </>
     )
 }
