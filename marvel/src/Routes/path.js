@@ -1,6 +1,7 @@
-export const path = {
+const path = {
     home: "/",
-    about: "/about",
-    characters: "/characters",
-    contact: "/contact",
+    about: "about",
+    characters: "characters",
 }
+
+export default path 
